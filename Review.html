@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/Styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Search Engine Survey</title>
+	</head>
+	<body>
+	<header>
+  		<h1>Research For Dummies </h1>
+		<h3>Welcome!</h3>
+	</header>
+	<nav>
+  		<div class="nav-links">
+  			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Google.html">Google</a></li>
+	 			<li><a href="Bing.html">Bing</a></li>
+				<li><a href="Yahoo.html">Yahoo</a></li>
+				<li><a href="Ask.html">Ask</a></li>
+				<li><a href="DuckDuckGo.html">Duck Duck Go</a></li>
+				<li><a href="Review.html">Write a review</a></li>
+   			</ul>
+		</div>
+	</nav>
+	<main>
+		<h1 class="h2">Please take our survey below.</h1>
+		<p class="marg">The survey below will help us to better understand people's favorite search engines, and how helpful our website was in educating our visitors.  We receive the reviews through E-mail and can sort through people’s responses to see which search engine really is everyone’s favorite (even though we already know Google is king).</p>
+		<form class="survey" id="postForm"> 
+		<fieldset><legend>Survey</legend>     
+		<p class="review"><label>Enter your name: </label></p>
+		<p class="choice"><input type="text"  id="name" name="Name" required /></p>  
+		
+		<p class="review"><label>What is your favorite search engine? 
+		</label></p>
+		<p class="choice">
+		<select id="favorite" name="Favorite search engine" required>
+		<option value =''>Please select one</option>
+		<option>Google</option>
+		<option>Bing</option>
+		<option>Yahoo</option>
+		<option>Ask</option>
+		<option>Duck Duck Go</option>
+		</select></p>   
+		<p class="review"><label>Why do you like this engine the best? 
+		</label></p>
+		<p class="choice">
+		<select id="why_like" name="Why do you like it?" required>
+		<option value =''>Please select one</option>
+		<option>Presentation</option>
+		<option>Ease of use</option>
+		<option>Accessibility</option>
+		<option>Features</option>
+		<option>Results accuracy</option>
+		</select></p> 
+		<p class="review"><label>Has this website helped you understand search engines better? 
+		</label></p>
+		<p class="choice">
+		<select id="help" name="Was our website helpful?" required>
+		<option value =''>Please select one</option>
+		<option>Yes, it definitely has</option>
+		<option>Yes, a little</option>
+		<option>No, not really</option>
+		<option>What's a search engine?</option>
+		<option>I am Google</option>
+		</select></p> 
+		<p class ="choice" required><label>How satisfied are you with our website? (0 being unsatisfied and 10 being satisfied)</p> 
+		</label>
+		<div>
+		<font class = "slidertext">0</font>
+		<class="slidercontainer">
+		<input id="satis" type="range" min="0" max="10" value="5"
+		class="slider" id="myRange">
+		<font class = "slidertext2">10</font>
+		</div>
+		<p class="review" required><label>Would you consider changing search engines now that you know more about them? 
+		</label></p>
+		<p class="choice">
+		<select id="change" name="Would you consider changing?" required>
+		<option value =''>Please select one</option>
+		<option>Yes</option>
+		<option>No</option>
+		<option>Potentially</option>
+		</select></p> 
+		<p class="review"><label>If you would like to leave a review, please enter it here: </label></p>
+		<p class="choice"><input id="review" type="text" name="Review" /></p>
+		<p class="choice"><input type="Reset" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="Submit" /></p>
+		</fieldset></form>
+		
+		<div id="postList">
+		
+		<div class="post">
+		<p class="name">Glen Farbanish</p>
+		<p class="question">Favorite search engine: Google</p>
+		<p class="question">Why do you like Google: Results accuracy</p>
+		<p class="question">Has the website helped you understand Google: I am Google</p>
+		<p class="question">How satisfied are you with our website: 10</p>
+		<p class="question">After learning, have you considered changing search engines: Potentially</p>
+		<p class="question">Review: Google is life! :P</p>
+		</div>
+		
+		<div class="post"><p class="name">Mr. Internet</p>
+		<p class="question">Favorite search engine: Bing</p>
+		<p class="question">Why do you like Bing: Features</p>
+		<p class="question">Has the website helped you understand Bing: Yes, it definitely has</p>
+		<p class="question">How satisfied are you with our website: 10</p>
+		<p class="question">After learning, have you considered changing search engines: Yes</p>
+		<p class="question">Review: *Dabs in real life*</p></div>
+		</div>
+
+	</main>
+	<footer>
+		<p class="footer">Written by: Brenden Montemurno, David Staronka, Glen Farbanish Jr., Jerry Yu, and Nicholas Apostolico</p>
+		<p class="footer">Contact information: <a href="mailto:pleasedontemailus69XD@gmail.com"> pleasedontemailus69XD@gmail.com</a></p>
+		<p class="footer">Phone Number: <a href="tel:+12017924132">(201) 792-4132</a></p>
+	</footer>
+	<script type="text/javascript" src="./j_script.js"></script>
+	</body>
+</html>

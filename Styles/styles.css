@@ -1,0 +1,348 @@
+.survey {
+	padding-left: 8px;
+	padding-bottom: 10px;
+}
+
+.post {
+	margin-left: 8px;
+	margin-bottom: 10px;
+	border-style: dashed;
+	border-color: magenta;
+	padding: 10px;
+}
+
+.name {
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+.question {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+/* These are the fancy clickable links on the left */
+nav .nav-links a {
+    /* Picked this color from https://material.io/color */
+    background-color: #a1ff00;
+
+    /* Need to show no shadows before animating them in! */
+    box-shadow: 0 0 0 transparent;
+
+    /* Set font color to white */
+    color: #ff54e2;
+    /* Give us some padding between word and bounds */
+    padding: 0 8px;
+
+    /* Remove those silly underlines! */
+    text-decoration: none;
+
+    /* Allow us to animate any properties! */
+    transition: all 0.2s ease-out;
+}
+
+nav .nav-links a:hover {
+    /* New, lighter background color */
+    background-color: #aaff19;
+
+    /* Just a touch of shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    /* Make it pop out! This doesn't move neighboring elements */
+    transform: scale(1.1, 1.1);
+}
+
+/* This holds our list of nav links */
+.nav-links {
+    /* Give it some space on the right */
+    margin-right: 10px;
+}
+
+/* This contains each nav link a tag */
+nav li {
+    /* Each nav link will take up the entire nav height */
+    height: 55px;
+}
+
+/* The list of nav links */
+nav ul {
+    /* The nav list shouldn't look like a list! */
+    list-style: none;
+}
+
+/* The entire navbar itself */
+nav {
+    background-color: #a1ff00;
+    height: 55px;
+}
+
+body {
+    width: 100%; 
+    background-color: #eee;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.content {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    padding: 16px;
+    width: 800px;
+}
+
+.content ul {
+    margin: 10px 20px;
+}
+
+p {
+    width: auto;
+    margin: 10px;
+}
+
+pre {
+    /* Designed to look like a 100% real hacker's terminal */
+    background-color: #000;
+    color: #5e5;
+    padding: 8px;
+
+    /* Get those cool glowing screen vibe */
+    box-shadow: 0 0 10px #5e5 inset;
+    text-shadow: 0 0 2px #5e5;
+}
+
+nav .nav-links a {
+	display: flex;
+	align-items: center;
+}
+
+/* List that holds the link containers */
+nav ul {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* List items that hold the links */
+nav li {
+	display: flex;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+header h1{
+	text-align: center;
+	padding: 10px;
+	background-color: #ffc300;
+}
+
+header h1+h3{
+	text-align: center;
+	padding: 10px;
+	background-color: #ffc300;
+}
+
+header {
+	width: 100%;
+	margin: 0;
+}
+footer {
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	background-color: #b76d3c;
+  	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+.logo {
+	max-width: 500px;
+}
+
+.browser {
+	max-width: 1000px;
+}
+
+.text {
+	text-align: center;
+	padding: 10px;
+}
+
+.footer {
+	padding: 2px 25px 0px 25px;
+}
+.center {
+	text-align: center;
+	list-style-position: inside;
+	padding-bottom: 10px;
+}
+
+h3 {
+	text-align: center;
+	padding: 10px;
+	font-size: 150%;
+}
+
+.steps {
+	padding: 5px 25px 5px 25px;
+}
+.h2 {
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+}
+
+.p {
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+}
+
+.marg {
+	padding: 0px 20px 10px 20px;
+}
+
+.review {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 20px 0px 10px;
+}
+.choice {
+	padding-left: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slidertext {
+	padding-left: 10px;
+	font-size: 12px;
+	color: red;
+}
+
+.slidertext2 {
+	 font-size: 12px;
+	 color: green;
+}
+
+@media only screen and (min-width: 999px){
+	img {
+		width: auto;
+		height: auto;
+		padding: 10px 10px 10px 10px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 998px) {
+	header {justify-content: center;}
+	img {
+		width: 100%;
+		height: auto;
+		padding: 10px 10px 10px 10px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	footer {justify-content: center;}
+}
+
+@media only screen and (max-width: 399px) {
+	header {
+		flex-direction: column; 
+		text-align: center;
+	}
+	
+	img {
+		width: 100%;
+		height: auto;
+		padding: 10px 10px 10px 10px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.browser {
+		padding: 0px 30px 0px 5px;
+	}
+	
+	footer {
+		flex-direction: column; 
+		text-align: center;
+	}
+	
+	.logo {
+		max-width: 500px;
+		padding: 0px 20px 0px 0px;
+	}
+	
+	.browser {
+		max-width: 1000px;
+		padding: 0px 20px 0px 0px;
+	}
+	
+	nav ul {
+		/* Each nav link will take up the entire nav height */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin:0;
+		width:auto;
+		height:auto;
+		min-width:100vw;
+	}
+	
+	nav {
+		height: 175px;
+	}
+	nav li {
+    height:25px;
+	
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
